@@ -1,22 +1,29 @@
-<!-- Todo: Agrega una estructura básica con hello world -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conteo de Vovales</title>
-    < link real= "stylesheet" href=" ./">
+    <title>Conteo de Vocales</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Conteo de Vocales </h1>
-</head>
-<main> 
-    <form> 
-        <label for="nombre"> Escribe tu nombre </label>
-        <intup type="text" id="nombre" name="nombre">
-        <p id="vocales" ></p>
+    <h1>Conteo de Vocales</h1>
+    <main> 
+        <form id="vocalesForm"> 
+            <label for="nombre">Escribe tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+            <p id="resultadoVocales"></p>
         </form>
     </main> 
-    <script src="">
+
+    <script>
+        document.getElementById('nombre').addEventListener('input', function() {
+            const nombre = this.value;
+            const vocales = nombre.match(/[aeiouáéíóúü]/gi);
+            const conteoVocales = vocales ? vocales.length : 0;
+            document.getElementById('resultadoVocales').innerText = 
+                `El nombre contiene ${conteoVocales} vocales.`;
+        });
+    </script>
 </body>
 </html>
