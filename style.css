@@ -1,33 +1,40 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #d6effa;
-}header {
-    background-color: #7c43d8;
+}
+
+header {
+    background-color: #845ec2;
     color: #ffffff;
     padding: 1em;
     text-align: center;
     border-radius: 25px;
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 label {
     font-weight: bold;
     margin-bottom: 0.5em;
 }
+
 #nombre {
     padding: 0.5em;
     border: 1px solid #b39cd0;
     border-radius: 0.5em;
 }
+
 #vocales {
     font-size: 1.2em;
     color: #00c9a7;
