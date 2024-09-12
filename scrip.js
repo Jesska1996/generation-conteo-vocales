@@ -16,11 +16,14 @@ function encontrarNumeroDeLetra( letra, nombre ) {
     }
     return numeroDeLetras;
 }
-fuction manejoDelEventoDeInputNombre (){
+fuction manejoDelEventoDeNombre (){
    const inputNombre = document.getElementById ("nombre")
     return inputNombre.value;
 }
 fuction manejoDelEventoDeInputNombre ()}
-    const nombre = leerValorDeNombre ();
-    console.log( nombre );
+    const nombre = leerValorDeNombre () .toLowerCase ();
+    );
+    const numLetraA = encontrarNumeroDeLetra("a", nombre);
+    const numLetraAMayus = encontrarNumeroDeLetra("A", nombre);
+    console.log("Num letras A: " + numLetraA );
 }
